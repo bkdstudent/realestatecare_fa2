@@ -36,3 +36,5 @@ npm run dev
 ```sh
 npm run build
 ```
+Foutje in git/gitHub...
+
