@@ -1,19 +1,25 @@
 <script setup>
-import DashBoard from './components/DashBoard.vue'
+//import DashBoard from './components/DashBoard.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="REC logo" class="logo" src="./assets/logo_white_black.svg" width="202" height="46" />
-    <div class="wrapper">
-      <DashBoard msg="RealEstateCare Project!" />
-    </div>
-  </header>
-  <h1>Tekst uit App.vue</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <v-app>
+    <v-layout>
+
+      <v-app-bar color="primary" density="comfortable">
+        <img src="./assets/logo_white_black.svg" alt="logo" heigth="24">
+<!--        <div class="font-weight-medium">Real Estate Care</div>-->
+      </v-app-bar>
+
+      <v-main>
+        <v-container>
+          Content onder de app-bar
+        </v-container>
+      </v-main>
+
+    </v-layout>
+
+  </v-app>
 </template>
 
 <style scoped>
