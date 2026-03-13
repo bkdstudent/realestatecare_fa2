@@ -1,6 +1,5 @@
 <script setup>
 //import DashBoard from './components/DashBoard.vue'
-import { useRouter } from 'vue-router'
 import { mdiSquare, mdiCircle, mdiTriangleDown,
   mdiBellOutline, mdiCogOutline,
   mdiBookmarkOutline, mdiCheckCircle, mdiViewComfy, mdiCog,
@@ -32,7 +31,7 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
       </v-app-bar>
       <!-- Hoofdheader + logo -->
       <v-app-bar color="secondary" density="comfortable" height="72" class="px-3">
-        <img src="./../assets/logo_white_black.svg" alt="logo" height="30">
+        <img src="./assets/logo_white_black.svg" alt="logo" height="30">
 
         <v-spacer />
 
@@ -50,7 +49,7 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
           <v-row class="fill-height">
 
             <v-col cols="6">
-              <v-card class="tile-card" hover :to="{ name: 'Scheduled'}" style="cursor: pointer;">
+              <v-card class="tile-card">
                 <v-icon :icon="mdiBookmarkOutline" size="72" />
                 <div class="tile-label">Scheduled</div>
               </v-card>

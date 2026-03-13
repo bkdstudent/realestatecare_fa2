@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 //components
 import App from './App.vue'
-// import router from '@/router';
+import router from '@/router';
 
 //vuetify
 import 'vuetify/styles'
@@ -10,11 +10,9 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
-// Iconen...
+// Icons...
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg' //icons
-// import '@mdi/font/css/materialdesignicons.css'
-// import { aliases, mdi } from 'vuetify/iconsets/mdi' // let op: zónder -svg
-//import { mdiAccount } from '@mdi/js'
+
 
 const vuetify = createVuetify({
         components, directives,
@@ -38,5 +36,6 @@ const vuetify = createVuetify({
 
 
 createApp(App)
+    .use(router)
     .use(vuetify)
     .mount('#app')

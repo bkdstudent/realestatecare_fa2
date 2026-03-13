@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import component which ar needed
+import DashBoard from "@/components/DashBoard.vue";
+import Scheduled from "@/components/Scheduled.vue";
+import Completed from "@/components/Completed.vue";
+import KnowledgeBase from "@/components/KnowledgeBase.vue";
+import Settings from "@/components/Settings.vue";
 
-//alle routes hier
+//route_table
 const routes = [
     {
         path: '/',
         name: 'home',
-        component: Home
+        component: DashBoard
     },
     {
         path: '/scheduled',
