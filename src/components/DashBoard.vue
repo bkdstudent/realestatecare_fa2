@@ -50,28 +50,28 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
           <v-row class="fill-height">
 
             <v-col cols="6">
-              <v-card class="tile-card" hover :to="{ name: 'Scheduled'}" style="cursor: pointer;">
+              <v-card class="tile-card" hover :to="{ name: 'scheduled'}" style="cursor: pointer;">
                 <v-icon :icon="mdiBookmarkOutline" size="72" />
                 <div class="tile-label">Scheduled</div>
               </v-card>
             </v-col>
 
             <v-col cols="6">
-              <v-card class="tile-card">
+              <v-card class="tile-card" hover :to="{ name: 'completed'}" style="cursor: pointer;">
                 <v-icon :icon="mdiCheckCircle" size="72"/>
                 <div class="tile-label">Completed</div>
               </v-card>
             </v-col>
 
             <v-col cols="6">
-              <v-card class="tile-card">
+              <v-card class="tile-card" hover :to="{ name: 'knowledgebase'}" style="cursor: pointer;">
                 <v-icon :icon="mdiViewComfy" size="72"/>
                 <div class="tile-label">Knowledge base</div>
               </v-card>
             </v-col>
 
             <v-col cols="6">
-              <v-card class="tile-card">
+              <v-card class="tile-card" hover :to="{ name: 'settings'}" style="cursor: pointer;">
                 <v-icon :icon="mdiCog" size="72"/>
                 <div class="tile-label">Settings</div>
               </v-card>
