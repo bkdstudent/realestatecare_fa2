@@ -1,15 +1,20 @@
-<script>
+<script setup>
 //import DashBoard from './components/DashBoard.vue'
-export default {
-  name: 'app',
-  components:{}
-}
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+
 </script>
 
 <template>
-  <div class="container">
-    <router-view />
-  </div>
+  <v-app>
+    <v-layout>
+      <AppHeader />
+        <v-main class="fill-height">
+          <router-view />
+        </v-main>
+      <AppFooter />
+    </v-layout>
+  </v-app>
 </template>
 
 <style scoped>
