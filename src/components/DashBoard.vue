@@ -9,12 +9,11 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
 
 <template>
 
-  <v-app>
         <v-container fluid class="fill-height py-4">
           <v-row class="fill-height">
 
             <v-col cols="6">
-              <v-card class="tile-card" hover :to="{ name: 'scheduled'}" style="cursor: pointer;">
+              <v-card class="tile-card" hover :to="{ name: 'scheduled'}" >
                 <v-icon :icon="mdiBookmarkOutline" size="72" />
                 <div class="tile-label">Scheduled</div>
               </v-card>
@@ -44,11 +43,12 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
           </v-row>
         </v-container>
 
-  </v-app>
+
 </template>
 
 <style scoped>
 .tile-card {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   display: flex;

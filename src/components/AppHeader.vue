@@ -7,7 +7,7 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
 </script>
 
 <template>
-<div>
+
   <v-app-bar color="primary" density="comfortable" height="30" class="px-3">
 
     <v-spacer />
@@ -25,7 +25,9 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
   </v-app-bar>
   <!-- Hoofdheader + logo -->
   <v-app-bar color="secondary" density="comfortable" height="72" class="px-3">
+    <router-link to="/">
     <img src="./../assets/logo_white_black.svg" alt="logo" height="30">
+    </router-link>
 
     <v-spacer />
 
@@ -37,7 +39,7 @@ import { mdiSquare, mdiCircle, mdiTriangleDown,
     </v-btn>
 
   </v-app-bar>
-</div>
+
 </template>
 
 <style scoped>
