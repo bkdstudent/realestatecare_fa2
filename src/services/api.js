@@ -12,12 +12,30 @@ export default {
     getInspectors() {
         return apiClient.get('/inspectors')
     },
+    getInspectorByUsername(username) {
+        return apiClient.get(`/inspectors?username=${username}`)
+    },
     //Reports...
     getReports() {
         return apiClient.get('/reports')
     },
+    getAssignedReports() {
+        return apiClient.get('/reports?status=completed')
+    },
     getCompletedReports() {
         return apiClient.get('/reports?status=completed')
+    },
+    getReport(id) {
+        return apiClient.get(`/reports/${id}`)
+    },
+    updateReport(id, data) {
+        return apiClient.put(`/reports/${id}`, data)
+    },
+    getDamageByReport(reportId) {
+        return apiClient.get(`/damage?reportId=${reportId}`)
+    },
+    getModificationsByReport(reportId) {
+        return apiClient.get(`/modification?reportId=${reportId}`)
     }
 
 

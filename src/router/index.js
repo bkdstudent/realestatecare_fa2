@@ -5,6 +5,7 @@ import Scheduled from "@/components/Scheduled.vue";
 import Completed from "@/components/Completed.vue";
 import KnowledgeBase from "@/components/KnowledgeBase.vue";
 import Settings from "@/components/Settings.vue";
+import ReportDetail from "@/components/ReportDetail.vue";
 
 //route_table
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
         path: '/completed',
         name: 'completed',
         component: Completed
+    },
+    {
+        path: '/completed/:id',
+        name: 'report-detail',
+        component: ReportDetail
     },
     {
         path: '/knowledgebase',

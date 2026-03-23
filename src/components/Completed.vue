@@ -96,17 +96,25 @@ onMounted(async() => {
                 </div>
               </v-card-text>
 
+              <v-card-actions>
+                <v-spacer />
+                <v-btn color="primary" variant="text" :append-icon="mdiChevronRight"
+                       size="small" :to="{ name: 'report-detail', params: { id: report.id}}" >
+                  Bekijken
+                </v-btn>
+              </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
-
-
 
     </v-container>
 
 </template>
 
 <style scoped>
+.gap-2 {
+  gap: 8px;
+}
 .tile-card {
   cursor: pointer;
   height: 100%;
