@@ -2,6 +2,7 @@
 
 Een REST API voor de RealEstateCare mobiele webapplicatie.  
 Gebouwd met **MockAPI.io** 
+![img.png](src/assets/img.png)
 Gebruikt door de VUE-applicatie voor RealestateCare 
 Extra tools: 
 - **Axios** 

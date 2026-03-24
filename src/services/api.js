@@ -36,6 +36,9 @@ export default {
     },
     getModificationsByReport(reportId) {
         return apiClient.get(`/modification?reportId=${reportId}`)
+    },
+    getScheduledReports() {
+        return apiClient.get('/reports?status=assigned')
     }
 
 
