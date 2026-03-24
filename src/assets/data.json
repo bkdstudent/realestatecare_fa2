@@ -1,0 +1,123 @@
+/* inspectors */
+[
+  {
+    "username": "jdev",
+    "password": "demo1234",
+    "name": "Jan de Vries",
+    "id": "1"
+  },
+  {
+    "username": "sbk",
+    "password": "demo1234",
+    "name": "Sara Bakker",
+    "id": "2"
+  },
+
+/*Reports */
+
+  {
+    "id": "1",
+    "inspectorId": "1",
+    "address": "Kerkstraat 2, Amsterdam",
+    "status": "completed",
+    "date": "2025-04-10"
+  },
+  {
+    "id": "2",
+    "inspectorId": "1",
+    "address": "Hoflaan 5, Utrecht",
+    "status": "assigned",
+    "date": "2025-04-08"
+  },
+  {
+    "id": "3",
+    "inspectorId": "2",
+    "address": "Molenweg 3, Rotterdam",
+    "status": "assigned",
+    "date": "2025-04-11"
+  },
+// Damage
+  {
+    "id": "1",
+    "reportId": "2",
+    "location": "Woonkamer",
+    "type": "slijtage",
+    "urgent": false,
+    "description": "Slijtage vloerbedekking binnen garantie tijd"
+  },
+  {
+    "id": "2",
+    "reportId": "2",
+    "location": "Badkamer",
+    "type": "calamiteit",
+    "urgent": true,
+    "description": "Lekkage bad"
+  },
+  {
+    "id": "3",
+    "reportId": "1",
+    "location": "Keuken",
+    "type": "calamiteit",
+    "urgent": true,
+    "description": "Gootsteen verstopt"
+  },
+//Damage
+  {
+    "id": "1",
+    "reportId": "2",
+    "location": "Buitenkozijnen",
+    "type": "houtrot",
+    "urgent": false,
+    "cost": "500-1500"
+  },
+  {
+    "id": "2",
+    "reportId": "2",
+    "location": "Meterkast",
+    "type": "elektra",
+    "urgent": false,
+    "cost": "1500+"
+  },
+  {
+    "id": "3",
+    "reportId": "1",
+    "location": "Keukenkastje",
+    "type": "elektra",
+    "urgent": false,
+    "cost": "1500+"
+  },
+// Installations
+  {
+    "id": "1",
+    "reportId": "2",
+    "location": "CV-ruimte",
+    "type": "verwarming",
+    "approved": false,
+    "comments": "Erg kleine ruimte!"
+  },
+  {
+    "id": "2",
+    "reportId": "3",
+    "location": "Zekeringkast",
+    "type": "elektra",
+    "approved": true,
+    "comments": "Hoofdstop bij de buren!"
+  },
+//modification
+  {
+    "id": "1",
+    "reportId": "1",
+    "location": "Keuken",
+    "executedBy": "huurder",
+    "action": "laten keuren",
+    "comments": "Geen bijzonderheden"
+  },
+  {
+    "id": "2",
+    "reportId": "3",
+    "location": "Tuin",
+    "executedBy": "aannemer",
+    "action": "accepteren",
+    "comments": "Geen bijzonderheden"
+  }
+]
